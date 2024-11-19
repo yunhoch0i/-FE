@@ -1,0 +1,780 @@
+.mainpage {
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+}
+
+.mainpage .div {
+    background-color: #ffffff;
+    overflow: hidden;
+    width: 1440px;
+    height: 1024px;
+    position: relative;
+}
+
+.mainpage .view {
+    position: absolute;
+    width: 1062px;
+    height: 70px;
+    top: 160px;
+    left: 189px;
+}
+
+.mainpage .overlap-group {
+    position: relative;
+    height: 70px;
+}
+
+.mainpage .rectangle {
+    width: 1060px;
+    height: 70px;
+    border: 4px solid;
+    border-color: var(--variable-collection-main-color);
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.mainpage .vector-wrapper {
+    position: absolute;
+    width: 67px;
+    height: 70px;
+    top: 0;
+    left: 995px;
+    background-color: var(--variable-collection-main-color);
+}
+
+.mainpage .vector {
+    width: 24px;
+    height: 24px;
+    left: 22px;
+    position: absolute;
+    top: 23px;
+}
+
+.mainpage .img {
+    width: 23px;
+    height: 22px;
+    left: 954px;
+    position: absolute;
+    top: 23px;
+}
+
+.mainpage .overlap-wrapper {
+    position: absolute;
+    width: 1446px;
+    height: 100px;
+    top: 0;
+    left: 0;
+}
+
+.mainpage .overlap {
+    position: relative;
+    width: 1440px;
+    height: 100px;
+    background-image: url(./img/image.png);
+    background-size: 100% 100%;
+}
+
+.mainpage .text-wrapper {
+    width: 72px;
+    top: 35px;
+    left: 1058px;
+    font-family: "Spoqa Han Sans Neo-Medium", Helvetica;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 30px;
+    white-space: nowrap;
+    position: absolute;
+    color: #000000;
+    letter-spacing: 0;
+}
+
+.mainpage .text-wrapper-2 {
+    width: 88px;
+    top: 35px;
+    left: 1167px;
+    font-size: 20px;
+    line-height: 30px;
+    position: absolute;
+    font-family: "Spoqa Han Sans Neo-Medium", Helvetica;
+    font-weight: 500;
+    color: #000000;
+    letter-spacing: 0;
+    white-space: nowrap;
+}
+
+.mainpage .view-2 {
+    position: absolute;
+    width: 82px;
+    height: 40px;
+    top: 30px;
+    left: 181px;
+    background-color: var(--variable-collection-main-color);
+}
+
+.mainpage .text-wrapper-3 {
+    width: 289px;
+    top: 36px;
+    left: 270px;
+    font-family: "Spoqa Han Sans Neo-Bold", Helvetica;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 30px;
+    position: absolute;
+    color: #000000;
+    letter-spacing: 0;
+}
+
+.mainpage .view-3 {
+    position: absolute;
+    width: 735px;
+    height: 440px;
+    top: 313px;
+    left: 190px;
+    overflow: hidden;
+}
+
+.mainpage .overlap-2 {
+    position: absolute;
+    width: 483px;
+    height: 53px;
+    top: 4px;
+    left: 0;
+}
+
+.mainpage .overlap-group-wrapper {
+    position: absolute;
+    width: 239px;
+    height: 53px;
+    top: 0;
+    left: 244px;
+}
+
+.mainpage .div-wrapper {
+    position: relative;
+    width: 237px;
+    height: 53px;
+    background-color: #d9d9d9;
+    border-top-width: 1px;
+    border-top-style: solid;
+    border-right-width: 1px;
+    border-right-style: solid;
+    border-color: #000000;
+}
+
+.mainpage .text-wrapper-4 {
+    width: 127px;
+    top: 13px;
+    left: 54px;
+    font-family: "Spoqa Han Sans Neo-Medium", Helvetica;
+    font-weight: 500;
+    font-size: 16px;
+    text-align: center;
+    line-height: 24px;
+    white-space: nowrap;
+    position: absolute;
+    color: #000000;
+    letter-spacing: 0;
+}
+
+.mainpage .view-4 {
+    position: absolute;
+    width: 247px;
+    height: 53px;
+    top: 0;
+    left: 0;
+}
+
+.mainpage .overlap-3 {
+    position: relative;
+    width: 245px;
+    height: 53px;
+    background-color: var(--variable-collection-main-color);
+    border-top-width: 1px;
+    border-top-style: solid;
+    border-right-width: 1px;
+    border-right-style: solid;
+    border-left-width: 1px;
+    border-left-style: solid;
+    border-color: #000000;
+}
+
+.mainpage .text-wrapper-5 {
+    width: 127px;
+    top: 13px;
+    left: 49px;
+    font-family: "Spoqa Han Sans Neo-Medium", Helvetica;
+    font-weight: 500;
+    font-size: 16px;
+    text-align: center;
+    line-height: 24px;
+    white-space: nowrap;
+    position: absolute;
+    color: #000000;
+    letter-spacing: 0;
+}
+
+.mainpage .view-5 {
+    position: absolute;
+    width: 737px;
+    height: 380px;
+    top: 57px;
+    left: 0;
+}
+
+.mainpage .overlap-4 {
+    position: relative;
+    width: 741px;
+    height: 380px;
+}
+
+.mainpage .rectangle-2 {
+    width: 735px;
+    height: 380px;
+    border: 1px solid;
+    border-color: #000000;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.mainpage .element {
+    width: 251px;
+    height: 190px;
+    top: 0;
+    position: absolute;
+    left: 0;
+}
+
+.mainpage .overlap-group-2 {
+    position: relative;
+    width: 245px;
+    height: 190px;
+    border-right-width: 1px;
+    border-right-style: solid;
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+    border-color: #0000001c;
+}
+
+.mainpage .overlap-5 {
+    position: absolute;
+    width: 99px;
+    height: 29px;
+    top: 29px;
+    left: 27px;
+}
+
+.mainpage .text-wrapper-6 {
+    width: 72px;
+    top: 0;
+    left: 0;
+    font-family: "Spoqa Han Sans Neo-Light", Helvetica;
+    font-weight: 300;
+    font-size: 12px;
+    line-height: 18px;
+    position: absolute;
+    color: #000000;
+    letter-spacing: 0;
+}
+
+.mainpage .text-wrapper-7 {
+    width: 58px;
+    top: 0;
+    left: 41px;
+    font-family: "Spoqa Han Sans Neo-Light", Helvetica;
+    font-weight: 300;
+    font-size: 12px;
+    line-height: 18px;
+    white-space: nowrap;
+    position: absolute;
+    color: #000000;
+    letter-spacing: 0;
+}
+
+.mainpage .p {
+    width: 174px;
+    top: 57px;
+    left: 26px;
+    font-family: "Spoqa Han Sans Neo-Bold", Helvetica;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 24px;
+    position: absolute;
+    color: #000000;
+    letter-spacing: 0;
+}
+
+.mainpage .element-2 {
+    position: absolute;
+    width: 251px;
+    height: 190px;
+    top: 0;
+    left: 490px;
+}
+
+.mainpage .overlap-6 {
+    position: relative;
+    width: 245px;
+    height: 190px;
+    border-top-width: 1px;
+    border-top-style: solid;
+    border-right-width: 1px;
+    border-right-style: solid;
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+    border-color: #0000001c;
+}
+
+.mainpage .overlap-group-3 {
+    position: absolute;
+    width: 101px;
+    height: 29px;
+    top: 29px;
+    left: 27px;
+}
+
+.mainpage .text-wrapper-8 {
+    width: 58px;
+    top: 0;
+    left: 43px;
+    font-family: "Spoqa Han Sans Neo-Light", Helvetica;
+    font-weight: 300;
+    font-size: 12px;
+    line-height: 18px;
+    white-space: nowrap;
+    position: absolute;
+    color: #000000;
+    letter-spacing: 0;
+}
+
+.mainpage .text-wrapper-9 {
+    width: 182px;
+    top: 57px;
+    left: 26px;
+    font-family: "Spoqa Han Sans Neo-Bold", Helvetica;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 24px;
+    position: absolute;
+    color: #000000;
+    letter-spacing: 0;
+}
+
+.mainpage .element-3 {
+    position: absolute;
+    width: 251px;
+    height: 190px;
+    top: 190px;
+    left: 245px;
+}
+
+.mainpage .overlap-7 {
+    position: relative;
+    width: 245px;
+    height: 190px;
+    border-right-width: 1px;
+    border-right-style: solid;
+    border-color: #0000001c;
+}
+
+.mainpage .overlap-group-4 {
+    position: absolute;
+    width: 119px;
+    height: 29px;
+    top: 29px;
+    left: 27px;
+}
+
+.mainpage .text-wrapper-10 {
+    width: 58px;
+    top: 0;
+    left: 61px;
+    font-family: "Spoqa Han Sans Neo-Light", Helvetica;
+    font-weight: 300;
+    font-size: 12px;
+    line-height: 18px;
+    white-space: nowrap;
+    position: absolute;
+    color: #000000;
+    letter-spacing: 0;
+}
+
+.mainpage .text-wrapper-11 {
+    width: 188px;
+    top: 57px;
+    left: 26px;
+    font-family: "Spoqa Han Sans Neo-Bold", Helvetica;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 24px;
+    position: absolute;
+    color: #000000;
+    letter-spacing: 0;
+}
+
+.mainpage .element-4 {
+    position: absolute;
+    width: 251px;
+    height: 190px;
+    top: 0;
+    left: 245px;
+}
+
+.mainpage .overlap-group-5 {
+    position: absolute;
+    width: 112px;
+    height: 29px;
+    top: 29px;
+    left: 27px;
+}
+
+.mainpage .text-wrapper-12 {
+    width: 58px;
+    top: 0;
+    left: 54px;
+    font-family: "Spoqa Han Sans Neo-Light", Helvetica;
+    font-weight: 300;
+    font-size: 12px;
+    line-height: 18px;
+    white-space: nowrap;
+    position: absolute;
+    color: #000000;
+    letter-spacing: 0;
+}
+
+.mainpage .element-5 {
+    width: 251px;
+    height: 190px;
+    top: 190px;
+    position: absolute;
+    left: 0;
+}
+
+.mainpage .overlap-group-6 {
+    position: absolute;
+    width: 125px;
+    height: 29px;
+    top: 29px;
+    left: 27px;
+}
+
+.mainpage .text-wrapper-13 {
+    width: 58px;
+    top: 0;
+    left: 67px;
+    font-family: "Spoqa Han Sans Neo-Light", Helvetica;
+    font-weight: 300;
+    font-size: 12px;
+    line-height: 18px;
+    white-space: nowrap;
+    position: absolute;
+    color: #000000;
+    letter-spacing: 0;
+}
+
+.mainpage .view-6 {
+    position: absolute;
+    width: 170px;
+    height: 45px;
+    top: 285px;
+    left: 533px;
+    border: 1px solid;
+    border-color: var(--variable-collection-lighter-color);
+}
+
+.mainpage .text-wrapper-14 {
+    width: 91px;
+    top: 7px;
+    left: 38px;
+    font-family: "Spoqa Han Sans Neo-Medium", Helvetica;
+    font-weight: 500;
+    font-size: 16px;
+    text-align: center;
+    line-height: 24px;
+    white-space: nowrap;
+    position: absolute;
+    color: #000000;
+    letter-spacing: 0;
+}
+
+.mainpage .text-wrapper-15 {
+    width: 96px;
+    top: 251px;
+    left: 570px;
+    font-family: "Spoqa Han Sans Neo-Medium", Helvetica;
+    font-weight: 500;
+    font-size: 16px;
+    text-align: center;
+    line-height: 24px;
+    position: absolute;
+    color: #000000;
+    letter-spacing: 0;
+}
+
+.mainpage .view-7 {
+    position: absolute;
+    width: 302px;
+    height: 433px;
+    top: 317px;
+    left: 949px;
+    overflow: hidden;
+}
+
+.mainpage .overlap-8 {
+    position: absolute;
+    width: 306px;
+    height: 380px;
+    top: 53px;
+    left: 0;
+}
+
+.mainpage .view-8 {
+    position: absolute;
+    width: 196px;
+    height: 35px;
+    top: 0;
+    left: 0;
+}
+
+.mainpage .overlap-group-7 {
+    position: relative;
+    width: 194px;
+    height: 35px;
+    background-color: #d9d9d9;
+}
+
+.mainpage .text-wrapper-16 {
+    width: 39px;
+    top: 8px;
+    left: 48px;
+    font-family: "Spoqa Han Sans Neo-Medium", Helvetica;
+    font-weight: 500;
+    font-size: 14px;
+    text-align: right;
+    line-height: 21px;
+    white-space: nowrap;
+    position: absolute;
+    color: #000000;
+    letter-spacing: 0;
+}
+
+.mainpage .view-9 {
+    position: absolute;
+    width: 110px;
+    height: 35px;
+    top: 0;
+    left: 194px;
+}
+
+.mainpage .overlap-9 {
+    position: relative;
+    width: 108px;
+    height: 35px;
+    background-color: #d9d9d9;
+}
+
+.mainpage .text-wrapper-17 {
+    width: 57px;
+    top: 8px;
+    left: 25px;
+    font-family: "Spoqa Han Sans Neo-Medium", Helvetica;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 21px;
+    white-space: nowrap;
+    position: absolute;
+    color: #000000;
+    letter-spacing: 0;
+}
+
+.mainpage .rectangle-3 {
+    width: 302px;
+    height: 380px;
+    border: 1px solid;
+    border-color: #000000;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.mainpage .element-6 {
+    width: 306px;
+    height: 50px;
+    top: 35px;
+    position: absolute;
+    left: 0;
+}
+
+.mainpage .text-wrapper-18 {
+    position: absolute;
+    width: 64px;
+    top: 9px;
+    left: 36px;
+    font-family: "Spoqa Han Sans Neo-Medium", Helvetica;
+    font-weight: 500;
+    color: #000000;
+    font-size: 14px;
+    letter-spacing: 0;
+    line-height: 21px;
+    white-space: nowrap;
+}
+
+.mainpage .text-wrapper-19 {
+    width: 47px;
+    top: 9px;
+    left: 224px;
+    font-size: 14px;
+    line-height: 21px;
+    position: absolute;
+    font-family: "Spoqa Han Sans Neo-Medium", Helvetica;
+    font-weight: 500;
+    color: #000000;
+    letter-spacing: 0;
+    white-space: nowrap;
+}
+
+.mainpage .element-7 {
+    width: 306px;
+    height: 51px;
+    top: 85px;
+    position: absolute;
+    left: 0;
+}
+
+.mainpage .text-wrapper-20 {
+    position: absolute;
+    width: 158px;
+    top: 9px;
+    left: 36px;
+    font-family: "Spoqa Han Sans Neo-Medium", Helvetica;
+    font-weight: 500;
+    color: #000000;
+    font-size: 14px;
+    letter-spacing: 0;
+    line-height: 21px;
+}
+
+.mainpage .element-8 {
+    position: absolute;
+    width: 306px;
+    height: 51px;
+    top: 136px;
+    left: 0;
+}
+
+.mainpage .element-9 {
+    position: absolute;
+    width: 306px;
+    height: 51px;
+    top: 187px;
+    left: 0;
+}
+
+.mainpage .view-10 {
+    position: absolute;
+    width: 170px;
+    height: 45px;
+    top: 280px;
+    left: 68px;
+    border: 1px solid;
+    border-color: var(--variable-collection-lighter-color);
+}
+
+.mainpage .view-11 {
+    position: absolute;
+    width: 112px;
+    height: 53px;
+    top: 0;
+    left: 0;
+}
+
+.mainpage .overlap-10 {
+    position: relative;
+    width: 110px;
+    height: 53px;
+    background-color: #f29203;
+    border-top-width: 1px;
+    border-top-style: solid;
+    border-right-width: 1px;
+    border-right-style: solid;
+    border-left-width: 1px;
+    border-left-style: solid;
+    border-color: #000000;
+}
+
+.mainpage .text-wrapper-21 {
+    width: 88px;
+    top: 12px;
+    left: 10px;
+    font-family: "Spoqa Han Sans Neo-Medium", Helvetica;
+    font-weight: 500;
+    font-size: 16px;
+    text-align: center;
+    line-height: 24px;
+    white-space: nowrap;
+    position: absolute;
+    color: #000000;
+    letter-spacing: 0;
+}
+
+.mainpage .footer {
+    position: absolute;
+    width: 1440px;
+    height: 153px;
+    top: 871px;
+    left: 0;
+    background-color: #f3f1f4;
+}
+
+.mainpage .logo-transparent {
+    position: absolute;
+    width: 266px;
+    height: 82px;
+    top: 36px;
+    left: 28px;
+    object-fit: cover;
+}
+
+.mainpage .element-10 {
+    width: 610px;
+    top: 54px;
+    left: 605px;
+    font-family: "Spoqa Han Sans Neo-Medium", Helvetica;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 30px;
+    position: absolute;
+    color: #000000;
+    letter-spacing: 0;
+}
+
+.mainpage .span {
+    font-weight: 500;
+}
+
+.mainpage .text-wrapper-22 {
+    font-family: "Spoqa Han Sans Neo-Bold", Helvetica;
+    font-weight: 700;
+}
+
+.mainpage .text-wrapper-23 {
+    font-family: "Spoqa Han Sans Neo-Light", Helvetica;
+    font-weight: 300;
+}
+
+.mainpage .text-wrapper-24 {
+    position: absolute;
+    width: 225px;
+    top: 54px;
+    left: 320px;
+    font-family: "Spoqa Han Sans Neo-Bold", Helvetica;
+    font-weight: 700;
+    color: #737373;
+    font-size: 24px;
+    letter-spacing: 0;
+    line-height: 36px;
+}

@@ -1,0 +1,6 @@
+:root {
+    --variable-collection-main-color: rgba(242, 146, 3, 1);
+    --variable-collection-darker-color: rgba(162, 98, 1, 1);
+    --variable-collection-lighter-color: rgba(253, 181, 73, 1);
+    --variable-collection-subtle-color: rgba(255, 230, 194, 1);
+}
