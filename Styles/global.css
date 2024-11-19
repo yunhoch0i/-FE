@@ -1,1 +1,58 @@
 <!-- 공통 스타일 -->
+
+#wrap{
+    min-height: calc(100vh - 10rem); /* footer 높이를 빼준다. */
+    background: white;
+}
+.footer{
+    /*height: 10rem; /* footer 높이 */
+    padding: 50px;
+    background-color: #F3F1F4 ;
+}
+.footer .ft_cnt .wapper{
+    display: flex;
+    align-items: flex-start;
+    max-width: 1720px;
+    margin: 0 auto;
+}
+.footer .ft_cnt .hd_logo h1 {
+    background: url("/resources/images/dongguk_logo.svg") left center no-repeat;
+    height: 53px;
+}
+.footer .ft_cnt .hd_logo h1 span {
+    display: inline-block;
+    color: #999;
+    font-size: 1.4rem;
+    padding-left: 185px;
+    margin-top: 15px;
+    font-weight: 600;
+}
+
+.footer .ft_cnt .ft_info {
+    margin-left: 5rem;
+    vertical-align: top;
+}
+
+.footer .ft_cnt .ft_info li {
+    display: inline-block;
+    color: #888;
+    font-size: 1em;
+    font-weight: 300;
+}
+
+.footer .ft_cnt .ft_info li:first-child {
+    margin-right: 20px;
+}
+
+.footer .ft_cnt .ft_info li span {
+    color: #888;
+    margin-right: 15px;
+    font-weight: 500;
+}
+
+.footer .ft_cnt .ft_info li.copyright {
+    display: block;
+    font-size: .9rem;
+    margin-top: 10px;
+    font-weight: lighter;
+}
