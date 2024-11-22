@@ -15,15 +15,12 @@
     max-width: 1720px;
     margin: 0 auto;
 }
-.footer .ft_cnt .hd_logo h1 {
-    background: url("/resources/images/dongguk_logo.svg") left center no-repeat;
-    height: 53px;
-}
+
 .footer .ft_cnt .hd_logo h1 span {
     display: inline-block;
     color: #999;
     font-size: 1.4rem;
-    padding-left: 185px;
+    text-align: center;
     margin-top: 15px;
     font-weight: 600;
 }
