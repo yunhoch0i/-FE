@@ -1,4 +1,30 @@
 <!-- 공통 스타일 -->
+@font-face {
+    font-family: "SpoqaHanSansNeo";
+    src: url("/resources/fonts/SpoqaHanSansNeo-Bold.ttf") format("truetype");
+    font-weight: 700;
+}
+@font-face {
+    font-family: "SpoqaHanSansNeo";
+    src: url("/resources/fonts/SpoqaHanSansNeo-Regular.ttf") format("truetype");
+    font-weight: 400;
+}
+@font-face {
+    font-family: "SpoqaHanSansNeo";
+    src: url("/resources/fonts/SpoqaHanSansNeo-Light.ttf") format("truetype");
+    font-weight: 300;
+}
+@font-face {
+    font-family: "SpoqaHanSansNeo";
+    src: url("/resources/fonts/SpoqaHanSansNeo-Thin.ttf") format("truetype");
+    font-weight: 100;
+}
+
+.Page {
+    font-family: "SpoqaHanSansNeo", Arial, sans-serif;
+}
+
+
 
 #wrap{
     min-height: calc(100vh - 10rem); /* footer 높이를 빼준다. */
@@ -7,11 +33,12 @@
 .footer{
     /*height: 10rem; /* footer 높이 */
     padding: 50px;
-    background-color: #F3F1F4 ;
+    background-color: #E4E4E4 ;
 }
 .footer .ft_cnt .wapper{
     display: flex;
-    align-items: flex-start;
+    flex-direction: row;
+    align-items: center;
     max-width: 1720px;
     margin: 0 auto;
 }
@@ -20,8 +47,8 @@
     display: inline-block;
     color: #999;
     font-size: 1.4rem;
+    align-items: center;
     text-align: center;
-    margin-top: 15px;
     font-weight: 600;
 }
 
@@ -31,7 +58,8 @@
 }
 
 .footer .ft_cnt .ft_info li {
-    display: inline-block;
+    display: flex;
+    align-items: center;
     color: #888;
     font-size: 1em;
     font-weight: 300;
@@ -43,6 +71,8 @@
 
 .footer .ft_cnt .ft_info li span {
     color: #888;
+    display: inline-block;
+    align-items: center;
     margin-right: 15px;
     font-weight: 500;
 }
