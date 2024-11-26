@@ -24,62 +24,54 @@
     font-family: "SpoqaHanSansNeo", Arial, sans-serif;
 }
 
-
-
-#wrap{
-    min-height: calc(100vh - 10rem); /* footer 높이를 빼준다. */
-    background: white;
-}
-.footer{
-    /*height: 10rem; /* footer 높이 */
-    padding: 50px;
-    background-color: #E4E4E4 ;
-}
-.footer .ft_cnt .wapper{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    max-width: 1720px;
-    margin: 0 auto;
+footer {
+    position: relative;
+    width: 1440px;
+    height: 153px;
+    background-color: #F3F1F4;
 }
 
-.footer .ft_cnt .hd_logo h1 span {
-    display: inline-block;
-    color: #999;
-    font-size: 1.4rem;
-    align-items: center;
-    text-align: center;
-    font-weight: 600;
+.logo{
+    position: absolute;
+    width: 266px;
+    height: 82px;
+    top: 36px;
+    left: 28px;
+    object-fit: cover;
 }
 
-.footer .ft_cnt .ft_info {
-    margin-left: 5rem;
-    vertical-align: top;
+.element{
+    position: absolute;
+    width: 610px;
+    top: 54px;
+    left: 605px;
+    font-family: "SpoqaHanSansNeo", Arial, sans-serif;
+    font-weight: 400;
+    color: #000000;
+    white-space: nowrap;
+    font-size: 20px;
+    letter-spacing: 0;
+    line-height: 1.5;
 }
 
-.footer .ft_cnt .ft_info li {
-    display: flex;
-    align-items: center;
-    color: #888;
-    font-size: 1em;
-    font-weight: 300;
-}
-
-.footer .ft_cnt .ft_info li:first-child {
-    margin-right: 20px;
-}
-
-.footer .ft_cnt .ft_info li span {
-    color: #888;
-    display: inline-block;
-    align-items: center;
-    margin-right: 15px;
+.text1{
     font-weight: 500;
 }
 
-.footer .ft_cnt .ft_info li.copyright {
-    display: block;
-    font-size: .9rem;
-    margin-top: 10px;
-    font-weight: lighter;
+.text2{
+    font-weight: 300;
+}
+
+.footer_text{
+    position: absolute;
+    width: 225px;
+    top: 54px;
+    left: 320px;
+    font-family: "SpoqaHanSansNeo", Arial, sans-serif;
+    font-weight: 700;
+    color: #737373;
+    font-size: 24px;
+    white-space: nowrap;
+    letter-spacing: 0;
+    line-height: 1.5;
 }
