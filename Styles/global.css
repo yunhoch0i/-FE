@@ -20,15 +20,19 @@
     font-weight: 100;
 }
 
-.Page {
+#Page {
     font-family: "SpoqaHanSansNeo", Arial, sans-serif;
+    height: auto;
+    min-height: 100%;
+    padding-bottom: 153px;
 }
 
 footer {
     position: relative;
-    width: 1440px;
     height: 153px;
+    margin-top: 50px;
     background-color: #F3F1F4;
+
 }
 
 .logo{
@@ -51,8 +55,9 @@ footer {
     white-space: nowrap;
     font-size: 20px;
     letter-spacing: 0;
-    line-height: 1.5;
+    line-height: 20px;
 }
+
 
 .text1{
     font-weight: 500;
@@ -73,5 +78,5 @@ footer {
     font-size: 24px;
     white-space: nowrap;
     letter-spacing: 0;
-    line-height: 1.5;
+    line-height: 20px;
 }
