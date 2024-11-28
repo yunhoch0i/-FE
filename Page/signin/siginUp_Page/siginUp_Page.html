@@ -1,10 +1,59 @@
 <!DOCTYPE html>
-<html>
+<html lang="ko">
 <head>
-    <meta charset="utf-8" />
-    <link rel="stylesheet" href="style.css" />
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>회원가입</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
+    <img src="/resources/images/AAS-icon logo.svg" alt="AAS Logo" class="logo">
+    <h1 class="signup-title">회원가입</h1>
+    <form action="/api/v1/auth/register" method="POST">
+        <!-- 아이디 입력란 -->
+        <div class="input-background">
+            <img src="/resources/images/AAS-icon.svg" alt="아이디" class="input-icon">
+            <input type="text" id="username" name="username" placeholder="아이디" required>
+        </div>
+        <!-- 비밀번호 입력란 -->
+        <div class="input-background">
+            <img src="/resources/images/AAS-icon.svg" alt="비밀번호" class="input-icon">
+            <input type="password" id="password" name="password" placeholder="비밀번호" required>
+        </div>
+        <!-- 이름 입력란 -->
+        <div class="input-background">
+            <img src="/resources/images/AAS-icon.svg" alt="이름" class="input-icon">
+            <input type="text" id="name" name="name" placeholder="이름" required>
+        </div>
+        <!-- 학번 입력란 -->
+        <div class="input-background">
+            <img src="/resources/images/AAS-icon.svg" alt="학번" class="input-icon">
+            <input type="text" id="studentId" name="studentId" placeholder="학번" required>
+        </div>
+        <!-- 이메일 입력란 -->
+        <div class="input-background email-group">
+            <img src="/resources/images/AAS-icon.svg" alt="이메일" class="input-icon">
+            <input type="email" id="email" name="email" placeholder="이메일" required>
+            <button type="button" class="email-send-btn" onclick="showVerificationSection()">인증발송</button>
+        </div>
+        <!-- 인증번호 입력란 (기본 숨김 상태) -->
+        <div class="input-background hidden verification-group" id="verification-section">
+            <img src="/resources/images/AAS-icon.svg" alt="인증번호" class="input-icon">
+            <input type="text" id="verificationCode" name="verificationCode" placeholder="인증번호">
+            <button type="button" class="verify-btn" onclick="verifyCode()">확인</button>
+        </div>
+        <!-- 회원가입 버튼 -->
+        <button type="submit" class="btn">회원가입</button>
+    </form>
+    <footer>
+        <p class="footer-text">
+            <span class="text1">AI소프트웨어융합학부</span><br>
+            <span class="text2">04620 서울시 중구 필동로 1길 30 동국대학교 원흥관</span>
+        </p>
+        <div class="footer-logo-wrapper">
+            <img class="logo" src="/resources/images/dongguk_logo.svg" alt="Dongguk Logo">
+        </div>
+    </footer>
+    <script src="script.js"></script>
 </body>
 </html>

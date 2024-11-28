@@ -1,0 +1,145 @@
+/* Global Styles */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #fff;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+.hidden {
+  display: none; /* 기본 숨김 */
+}
+
+.logo {
+  max-width: 150px;
+  height: auto;
+  margin-bottom: 1rem;
+}
+
+.signup-title {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 2rem;
+}
+
+/* Input Background */
+.input-background {
+  display: flex;
+  align-items: center;
+  border: 1px solid #ffa500;
+  border-radius: 8px;
+  padding: 0.5rem;
+  margin-bottom: 1rem;
+  width: 350px;
+  background-color: #fff;
+  box-sizing: border-box;
+}
+
+.input-icon {
+  width: 24px;
+  height: 24px;
+  margin-right: 10px;
+}
+
+.input-background input {
+  flex: 1;
+  border: none;
+  outline: none;
+  font-size: 16px;
+  color: #333;
+  background-color: transparent;
+}
+
+.input-background input::placeholder {
+  color: #aaa;
+}
+
+/* Email Group */
+.email-group {
+  position: relative;
+}
+
+.email-send-btn {
+  background-color: #ddd;
+  border: none;
+  padding: 0.5rem 1rem;
+  font-size: 14px;
+  border-radius: 4px;
+  cursor: pointer;
+  color: #555;
+}
+
+.email-send-btn:hover {
+  background-color: #ccc;
+}
+
+/* Verification Group */
+.verification-group input {
+  flex: 1;
+  margin-right: 0.5rem;
+}
+
+.verify-btn {
+  background-color: #ddd;
+  border: none;
+  padding: 0.5rem 1rem;
+  font-size: 14px;
+  border-radius: 4px;
+  cursor: pointer;
+  color: #555;
+}
+
+.verify-btn:hover {
+  background-color: #ccc;
+}
+
+/* Submit Button */
+.btn {
+  background-color: #ff9800;
+  color: #fff;
+  border: none;
+  padding: 0.8rem;
+  width: 350px;
+  font-size: 16px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+  box-sizing: border-box;
+  margin-top: 3rem;
+}
+
+.btn:hover {
+  background-color: #e68900;
+}
+
+/* Footer */
+footer {
+  width: 100%;
+  padding: 1rem 2rem;
+  background-color: #f0f0f0;
+  text-align: center;
+  box-sizing: border-box;
+}
+
+footer .footer-text {
+  font-size: 12px;
+  line-height: 1.5;
+  color: #333;
+  margin-bottom: 1rem;
+}
+
+footer .footer-logo-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 1rem;
+}
+
+footer .logo {
+  max-width: 100px;
+  height: auto;
+}
