@@ -5,6 +5,7 @@
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="/Styles/global.css" />
     <link rel="stylesheet" href="/Styles/styleguide.css"/>
+    <script src="script.js"></script>
     <style>
         /* 링크 스타일 초기화 */
         a {
@@ -39,8 +40,8 @@
 
             <nav>
                 <ul>
-                    <li><a href="Page/signin/siginIn_Page/siginIn_Page.html" class="linkFont">로그인</a></li>
-                    <li><a href="Page/signin/siginUp_Page/siginUp_Page.html" class="linkFont">회원가입</a></li>
+                    <li><a href="/Page/signin/siginIn_Page/siginIn_Page.html" class="linkFont">로그인</a></li>
+                    <li><a href="/Page/signin/siginUp_Page/siginUp_Page.html" class="linkFont">회원가입</a></li>
                 </ul>
             </nav>
 
@@ -50,9 +51,9 @@
 <!-- 여기부터 메인 페이지 구현하기 -->
 <div class="search_area">
     <div class="search_input_box">
-        <form action="search_Page/search_Page.html" method="get">
+        <form action="search_Page/search_Page.html" method="post">
             <label for="title"></label>
-            <input id="title" name="query" type="search" class="search_input" placeholder="검색어를 입력하세요">
+            <input id="title" name="query" type="search" class="search_input">
             <button type="submit" class="search_button">
                 <img src="/resources/images/search.svg" alt="search">
             </button>
@@ -74,17 +75,36 @@
 
         <div class="tab-contents">
             <div class="tab-content" id="popular-research" style="display: block;">
-                <div class="tab-section">
-                    <h4>공학 > 컴퓨터공학</h4>
-                    <p>웹 사이트의 인기도로 인한 도큐먼트 교체정책</p>
+                <div class="tab-grid">
+                    <div class="tab-section">
+                        <h4>공학 > 컴퓨터공학</h4>
+                        <p>웹 사이트의 인기도로 인한 도큐먼트 교체정책</p>
+                    </div>
+                    <div class="tab-section">
+                        <h4>사회과학 > 법학</h4>
+                        <p>범죄피해자의 보호제도에 대한 경찰의 현황 및 개선 방안</p>
+                    </div>
+                    <div class="tab-section">
+                        <h4>인문학 > 불교학</h4>
+                        <p>금산사 역대 고승들의 가풍과 김제불교</p>
+                    </div>
+                    <div class="tab-section">
+                        <h4>철학 > 철학</h4>
+                        <p>‘혼종’ 개념의 번역과 ‘주체’ 개념의 재고</p>
+                    </div>
+                    <div class="tab-section">
+                        <h4>사회과학 > 행정학</h4>
+                        <p>반복피해사건에 대한 경찰의 점증적 대응 전략</p>
+                    </div>
+                    <div class="tab-section">
+                        <h4 align="center">인기 논문</h4>
+                        <a href="popular_more.html" class="more-button">더보기</a>
                 </div>
-                <div class="tab-section">
-                    <h4>사회과학 > 법학</h4>
-                    <p>범죄피해자의 보호제도에 대한 경찰의 현황 및 개선 방안</p>
-                </div>
-                <a href="popular_more.html" class="more-button">더보기</a>
+
+            </div>
             </div>
             <div class="tab-content" id="latest-research" style="display: none;">
+                <div class="tab-grid">
                 <div class="tab-section">
                     <h4>인문학 > 불교학</h4>
                     <p>금산사 역대 고승들의 가풍과 김제불교</p>
@@ -93,40 +113,23 @@
                     <h4>철학 > 철학</h4>
                     <p>‘혼종’ 개념의 번역과 ‘주체’ 개념의 재고</p>
                 </div>
-                <a href="latest_more.html" class="more-button">더보기</a>
-            </div>
-            <div class="tab-content" id="engineering-research" style="display: none;">
                 <div class="tab-section">
-                    <h4>공학 > 기계공학</h4>
-                    <p>차량 동역학을 활용한 자율주행 최적화</p>
+                    <h4>사회과학 > 행정학</h4>
+                    <p>반복피해사건에 대한 경찰의 점증적 대응 전략</p>
                 </div>
                 <div class="tab-section">
-                    <h4>공학 > 전기전자공학</h4>
-                    <p>신경망 기반의 에너지 효율 최적화 연구</p>
-                </div>
-                <a href="engineering_more.html" class="more-button">더보기</a>
-            </div>
-            <div class="tab-content" id="humanities-research" style="display: none;">
-                <div class="tab-section">
-                    <h4>인문학 > 역사</h4>
-                    <p>조선시대 과거 제도의 변화와 영향</p>
+                    <h4>공학 > 컴퓨터공학</h4>
+                    <p>웹 사이트의 인기도로 인한 도큐먼트 교체정책</p>
                 </div>
                 <div class="tab-section">
-                    <h4>인문학 > 언어학</h4>
-                    <p>한글 창제의 언어학적 기초와 현대적 의미</p>
+                    <h4>사회과학 > 법학</h4>
+                    <p>범죄피해자의 보호제도에 대한 경찰의 현황 및 개선 방안</p>
                 </div>
-                <a href="humanities_more.html" class="more-button">더보기</a>
-            </div>
-            <div class="tab-content" id="special-research" style="display: none;">
-                <div class="tab-section">
-                    <h4>특별 주제 > 미래학</h4>
-                    <p>미래 사회를 위한 기술 윤리 연구</p>
+                    <div class="tab-section">
+                        <h4 align="center">최신 논문</h4>
+                        <a href="lastest_more.html" class="more-button">더보기</a>
+                    </div>
                 </div>
-                <div class="tab-section">
-                    <h4>특별 주제 > 환경학</h4>
-                    <p>탄소중립을 위한 정책적 해결 방안</p>
-                </div>
-                <a href="special_more.html" class="more-button">더보기</a>
             </div>
         </div>
     </div>
@@ -163,13 +166,6 @@
         <a href="labs_more.html" class="more-button">더보기</a>
     </aside>
 </div>
-<script src="script.js"></script>
-
-
-
-
-
-
 
 
     <!-- 푸터 아직 작업 안끝남 -->
