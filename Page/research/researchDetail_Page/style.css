@@ -47,3 +47,80 @@ header {
 
     outline: none;
 }
+
+.title{
+    margin-top: 100px;
+    margin-bottom: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 1260px;
+}
+
+.title-text{
+    border-bottom: 1px solid #757575;
+}
+
+.title-text h1{
+    font-size: 2.5rem;
+    font-weight: bold;
+
+}
+
+.title-text p{
+    font-size: 1.5rem;
+    font-weight: 300;
+    color: gray;
+}
+
+.title-info{
+    justify-content: left;
+    color: gray;
+    float: left;
+}
+
+.bookmark{
+    justify-content: right;
+    float: right;
+    align-items: center;
+    height: 50px;
+    line-height: 50px;
+}
+
+.bookmark-button{
+    background-color: rgb(217, 217, 217, 0.33);
+    color: black;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+.keyword{
+
+}
+
+.author{
+
+
+}
+
+.abstract{
+
+
+}
+
+.index{
+
+
+}
+
+.reference{
+
+
+}
+
+.reference-pic{
+
+
+}
