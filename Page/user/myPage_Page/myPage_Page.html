@@ -1,10 +1,140 @@
 <!DOCTYPE html>
-<html>
+<html lang="ko">
 <head>
-    <meta charset="utf-8" />
-    <link rel="stylesheet" href="style.css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Page</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <header>
+        <a href="/Page/main/main_Page.html">
+            <img src="/resources/images/AAS-icon logo.svg" alt="AAS Logo" class="logo">
+        </a>
+        <div class="search_area">
+            <div class="search_input_box">
+                <form action="/Page/main/search_Page" method="post">
+                    <label for="title"></label>
+                    <input id="title" name="query" type="search" class="search_input">
+                    <button type="submit" class="search_button">
+                        <img src="/resources/images/search.svg" alt="search">
+                    </button>
+                </form>
+            </div>
+        </div>
+        <a href="/Page/user/myPage_Page/myPage_Page.html">
+            <img src="/resources/images/user.svg" alt="user" class="user-icon">
+        </a>
+    </header>
 
+    <main>
+        <div class="content-wrapper">
+            <!-- Profile Section -->
+            <section class="profile-section">
+                <h2>Profile</h2>
+                <hr>
+                <div class="profile-container">
+                    <div class="profile-picture">
+                        <img src="/resources/images/user.svg" alt="User Profile">
+                    </div>
+                    <div class="profile-details">
+                        <div>
+                            <label>이름</label>
+                            <input type="text" value="박준홍" readonly>
+                        </div>
+                        <div>
+                            <label>학과</label>
+                            <input type="text" value="AI소프트웨어융합학부 컴퓨터공학전공" readonly>
+                        </div>
+                        <div>
+                            <label>이메일</label>
+                            <input type="text" value="dongguk@dgu.ac.kr" readonly>
+                        </div>
+                        <div>
+                            <label>전화번호</label>
+                            <input type="text" value="010-1111-2222" readonly>
+                        </div>
+                    </div>
+                </div>
+                <div class="additional-info">
+                    <label>관심분야</label>
+                    <textarea readonly>데이터 사이언스, AI 개발</textarea>
+                    <br><br>
+                    <label>자기소개</label>
+                    <textarea readonly>끊임없는 도전과 학습을 통해 성장하고자 합니다.</textarea>
+                </div>
+            </section>
+
+            <!-- Application Section -->
+            <section class="application-section">
+                <h2>Application</h2>
+                <hr>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>연구 이름</th>
+                            <th>지원 자격</th>
+                            <th>지원자 이름</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>CPET Lab</td>
+                            <td>학부연구생</td>
+                            <td>홍준승</td>
+                        </tr>
+                        <tr>
+                            <td>개별연구(CSC 동형암호 활용 연구)</td>
+                            <td>개별연구</td>
+                            <td>김현수</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+
+            <!-- Research Section -->
+            <section class="research-section">
+                <h2>Research</h2>
+                <hr>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>연구 이름</th>
+                            <th>상세보기</th>
+                            <th>수정</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>CPET Lab</td>
+                            <td><a href="#">상세보기</a></td>
+                            <td><a href="#">수정</a></td>
+                        </tr>
+                        <tr>
+                            <td>개별연구(CSC 동형암호 활용 연구)</td>
+                            <td><a href="#">상세보기</a></td>
+                            <td><a href="#">수정</a></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+
+            <!-- Buttons -->
+            <div class="button-container">
+                <button>연구 추가</button>
+                <button>정보 수정</button>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p class="footer-text">
+            <span class="text1">AI소프트웨어융합학부</span><br>
+            <span class="text2">04620 서울시 중구 필동로 1길 30 동국대학교 원흥관 4층 E427호</span>
+        </p>
+        <div class="footer-logo">
+            <img src="/resources/images/dongguk_logo.svg" alt="Dongguk Logo">
+        </div>
+    </footer>
 </body>
 </html>
