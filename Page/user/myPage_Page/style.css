@@ -1,121 +1,188 @@
 /* Header Styles */
 header {
-  background-color: white;
   display: flex;
-  padding: 1rem 10%;
-  align-items: center;
   justify-content: space-between;
+  align-items: center;
+  padding: 1rem 10%; /* 좌우 공백 설정 */
+  background-color: white;
 }
 
 .search_area {
   position: relative;
-  width: 50%;
+  width: 50%; /* 화면 중앙에 고정된 폭 */
+  border: 5px solid #F29203;
+  margin: 0 auto; /* 검색 박스 중앙 정렬 */
+}
+
+.search_input_box {
+  width: 100%;
+  background-color: white;
+  border: none;
 }
 
 .search_input {
   width: 100%;
-  height: 40px;
-  font-size: 1rem;
-  padding: 0 1rem;
-  border: 2px solid #F29203;
-  border-radius: 4px;
+  height: 58px;
+  border: none;
+  font-size: 1.5rem;
+  padding: 0 20px;
 }
 
 .search_button {
   position: absolute;
+  background-color: #F29203;
+  width: 58px;
+  height: 58px;
   top: 0;
   right: 0;
-  height: 40px;
-  width: 40px;
-  background-color: #F29203;
-  border: none;
   cursor: pointer;
-}
-
-/* Main Section Styles */
-main {
-  padding: 2rem 10%;
-  background-color: #f9f9f9;
+  border: none;
+  outline: none;
 }
 
 /* Profile Section */
 .profile-section {
-  margin-bottom: 2rem;
+  max-width: 60%; /* 중앙에 고정된 폭 */
+  margin: 0 auto 2rem; /* 상단 여백 및 중앙 정렬 */
 }
 
-.profile-content {
+.profile-container {
   display: flex;
-  align-items: center;
+  gap: 2rem;
+  margin-bottom: rem;
 }
-
+/* 프로필 사진 위치 조정 */
 .profile-picture {
-  width: 100px;
-  height: 100px;
+  display: flex;
+  justify-content: center; /* 수평 중앙 정렬 */
+  align-items: center; /* 수직 중앙 정렬 */
+  width: 150px; /* 적절한 이미지 영역 확보 */
+  height: 150px;
+}
+
+.profile-picture img {
+  width: 120px;
+  height: 120px;
   border-radius: 50%;
-  margin-right: 2rem;
+  border: 2px solid black;
 }
 
-.profile-details p {
-  margin: 0.5rem 0;
-}
-
-/* Application Table */
-.application-table,
-.research-table {
-  width: 100%;
-  border-collapse: collapse;
+/* 프로필 정보 밑줄 조정 */
+.profile-details input {
+  width: 250%; /* 긴 텍스트도 충분히 표현 가능 */
+  max-width: 600px;
+  padding: 0.5rem 0px;
+  font-size: 1rem;
+  border: none;
+  border-bottom: 1px solid #040000; /* 밑줄 표시 */
+  background-color: transparent;
   margin-bottom: 1rem;
 }
 
-.application-table th,
-.application-table td,
-.research-table th,
-.research-table td {
-  border: 1px solid #ddd;
+
+/* 관심분야와 자기소개 */
+.additional-info label {
+  font-size: 0.9rem;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+  display: block;
+}
+
+textarea {
+  width: 100%;
+  height: 60px;
   padding: 0.5rem;
+  border: 1px solid #ddd;
+  background-color: #f9f9f9;
+  resize: none;
+  font-family: arial;
+}
+/* Application & Research Section */
+.application-section,
+.research-section {
+  max-width: 60%; /* Profile과 동일한 폭 */
+  margin: 0 auto 2rem; /* 중앙 정렬 및 하단 간격 */
+}
+
+table {
+  width: 100%; /* 테이블이 섹션의 폭에 맞게 채워짐 */
+  border-collapse: collapse;
+  margin-top: 1.5rem;
+}
+
+th {
+  background-color: #ccc;
+  padding: 1rem;
+  font-size: 1rem;
+  font-weight: bold;
   text-align: center;
 }
 
-.application-table th,
-.research-table th {
-  background-color: #f4f4f4;
-  font-weight: bold;
+td {
+  padding: 1rem;
+  border-top: 1px solid #ddd;
+  text-align: center;
 }
 
-/* Research Section */
-.research-actions {
+/* Buttons Section */
+.button-container {
+  max-width: 60%; /* Profile과 동일한 폭 */
+  margin: 0 auto; /* 버튼 섹션 중앙 정렬 */
   display: flex;
-  justify-content: flex-end;
+  flex-direction: column;
   gap: 1rem;
+  align-items: flex-end; /* 오른쪽 정렬 */
 }
 
-.add-research-btn,
-.edit-info-btn {
-  padding: 0.5rem 1rem;
-  background-color: #F29203;
-  border: none;
+button {
+  background-color: #f29203;
   color: white;
+  font-size: 1rem;
+  padding: 0.8rem 1.2rem;
+  border: none;
+  border-radius: 0px;
   cursor: pointer;
-  border-radius: 4px;
+  text-align: center;
 }
 
-.add-research-btn:hover,
-.edit-info-btn:hover {
-  background-color: #e68900;
+.button-container button {
+  background-color: #f29203;
+  color: white;
+  font-size: 1rem;
+  padding: 0.5rem 1.4rem;
+  font-weight: bold;
+  border: none;
+  border-radius: 12.5px;
+  cursor: pointer;
+  text-align: center;
 }
+/* 공통 섹션 제목 스타일 */
+.profile-section h2,
+.application-section h2,
+.research-section h2 {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
 
 /* Footer Styles */
 footer {
   background-color: #f5f5f5;
-  padding: 1.5rem;
   text-align: center;
+  padding: 1.5rem;
+  margin-top: 2rem;
 }
 
-.footer-text {
-  margin-bottom: 1rem;
-  font-size: 0.875rem;
+.footer-logo img {
+  max-width: 100px;
+  margin-top: 1rem;
 }
 
-.footer-logo-wrapper .logo {
-  width: 120px;
+label {
+  font-size: 12px;
+}
+
+.additional-info label {
+  font-size: 12px;
 }
