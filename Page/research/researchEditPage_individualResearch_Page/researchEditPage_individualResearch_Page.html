@@ -1,10 +1,91 @@
 <!DOCTYPE html>
 <html>
 <head>
+    <title>Research Page</title>
     <meta charset="utf-8" />
     <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="/Styles/global.css" />
+    <link rel="stylesheet" href="/Styles/styleguide.css"/>
+    <script src="script.js"></script>
 </head>
 <body>
+<div id="Page">
+    <header>
+        <a href="/Page/main/main_Page.html">
+            <img src="/resources/images/AAS-icon%20logo.svg" alt="AAS logo">
+        </a>
+        <div class="search_area">
+            <form action="/Page/main/search_Page" method="post">
+                <input type="search" name="query" id="title" class="search_input" placeholder="검색">
+                <button type="submit" class="search_button">
+                    <img src="/resources/images/search.svg" alt="search">
+                </button>
+            </form>
+        </div>
+        <a href="/Page/user/myPage_Page/myPage_Page.html">
+            <img src="/resources/images/user.svg" alt="user">
+        </a>
+    </header>
 
+    <!-- 연구 수정 섹션 -->
+    <div class="container">
+        <h1 class="title">연구 수정</h1>
+        <form action="/api/v1/researches/{research_id}" method="put">
+            <div class="field">
+                <label for="research-title" class="main-content-title">제목</label>
+                <input type="text" id="research-title" class="main-content-text" value="개별연구(CSC 동형암호 활용 연구)">
+            </div>
+            <div class="field">
+                <label for="research-subtitle" class="main-content-title">개설학부</label>
+                <input type="text" id="research-subtitle" class="main-content-text" value="AI소프트웨어융합학부">
+            </div>
+            <div class="field">
+                <label for="professor" class="main-content-title">교수명</label>
+                <input type="text" id="professor" class="main-content-text" value="김동우">
+            </div>
+            <div class="field">
+                <label for="classification" class="main-content-title">기존/신설</label>
+                <input type="text" id="classification" class="main-content-text" value="기존">
+            </div>
+            <div class="field">
+                <label for="code" class="main-content-title">학수강좌번호</label>
+                <input type="text" id="code" class="main-content-text" value="DAI3075-01">
+            </div>
+            <div class="field">
+                <label for="content" class="main-content-title">연구내용</label>
+                <textarea id="content" class="main-content-text" rows="4">동형암호 개념 습득 후...</textarea>
+            </div>
+            <div class="field">
+                <label for="week" class="main-content-title">수강주간</label>
+                <input type="text" id="week" class="main-content-text" value="8">
+            </div>
+            <div class="field">
+                <label for="link" class="main-content-title">인터뷰 일정</label>
+                <input type="url" id="link" class="main-content-text" value="https://forms.gle/wXk8XRQVaeZNYjtLA">
+            </div>
+            <div class="field">
+                <label for="achievement" class="main-content-title">수강자취득사실</label>
+                <textarea id="achievement" class="main-content-text" rows="3">심화프로그래밍(C++), 컴퓨터프로그래밍실습</textarea>
+            </div>
+            <div class="action-buttons">
+                <form action="/api/v1/researches/{research_id}" method="delete">
+                    <input type="reset" class="delete-button" value="연구삭제">
+                </form>
+                <input type="submit" class="submit-button" value="변경완료">
+            </div>
+        </form>
+    </div>
+
+    <footer>
+        <img class="logo" src="/resources/images/dongguk_logo.svg" alt="Dongguk logo">
+        <p class="element">
+            <span class="text1">주소&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+            <span class="text2">04620 서울시 중구 필동로 1길 30 동국대학교 원흥관 4층 E427호</span>
+        </p>
+        <p class="footer_text">
+            <span>AI소프트웨어융합학부</span>
+        </p>
+    </footer>
+</div>
 </body>
 </html>
