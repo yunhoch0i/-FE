@@ -5,9 +5,17 @@ body {
   margin: 0;
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
   min-height: 100vh;
+}
+
+.container{
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  margin-top: auto;
+  margin-bottom: auto;
 }
 
 .content-wrapper {
@@ -102,41 +110,3 @@ body {
   text-decoration: underline;
 }
 
-/* Footer */
-footer {
-  width: 100%;
-  padding: 1rem 2rem;
-  background-color: #f0f0f0;
-  text-align: center;
-  position: relative;
-  bottom: 0;
-  box-sizing: border-box;
-}
-
-footer .footer-text {
-  font-size: 12px;
-  line-height: 1.5;
-  color: #333;
-  margin-bottom: 1rem;
-}
-
-.footer-text .text1 {
-  font-weight: bold;
-}
-
-.footer-text .text2 {
-  color: #666;
-}
-
-/* Footer Logo */
-.footer-logo-wrapper {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-footer .logo {
-  max-width: 150px;
-  height: auto; /* 이미지 비율 유지 */
-  margin-top: 0.5rem;
-}

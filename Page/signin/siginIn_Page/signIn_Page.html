@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="/Styles/global.css">
 </head>
 <body>
+<div class="container">
     <div class="content-wrapper">
         <h1 class="login-title">로그인</h1>
         <form action="/api/v1/auth/login" method="POST">
@@ -29,19 +30,21 @@
             <button type="submit" class="btn">로그인</button>
         </form>
         <div class="links">
-            <a href="/find-password"><strong>비밀번호 찾기</strong></a> | 
-            <a href="/find-id"><strong>아이디 찾기</strong></a> | 
+            <a href="/find-password"><strong>비밀번호 찾기</strong></a> |
+            <a href="/find-id"><strong>아이디 찾기</strong></a> |
             <a href="../siginUp_Page/siginUp_Page.html"><strong>회원가입</strong></a>
         </div>
     </div>
+</div>
     <footer>
-        <p class="footer-text">
-            <span class="text1">AI소프트웨어융합학부</span><br>
+        <img class="logo" src="/resources/images/dongguk_logo.svg" alt="Dongguk logo">
+        <p class="element">
+            <span class="text1">주소&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
             <span class="text2">04620 서울시 중구 필동로 1길 30 동국대학교 원흥관 4층 E427호</span>
         </p>
-        <div class="footer-logo-wrapper">
-            <img class="logo" src="/resources/images/dongguk_logo.svg" alt="Dongguk logo">
-        </div>
+        <p class="footer_text">
+            <span>AI소프트웨어융합학부</span>
+        </p>
     </footer>
 </body>
 </html>
