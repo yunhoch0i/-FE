@@ -96,58 +96,66 @@ header {
     cursor: pointer;
 }
 
-.keyword{
-    display: block;
-    text-align: left;
 
+
+/* 부모 컨테이너 정렬 */
+.main-content {
+    width: 100%; /* 화면 너비에 적응 */
+    max-width: 1260px; /* 최대 너비 제한 */
+    margin: 50px auto; /* 상하 여백과 가운데 정렬 */
+    padding: 20px; /* 내부 여백 추가 */
+    box-sizing: border-box; /* 패딩 포함 너비 계산 */
 }
 
-.author{
-
-
+/* 섹션 공통 스타일 */
+.main-content > div {
+    display: flex; /* 가로 배치 */
+    align-items: flex-start; /* 위쪽 정렬 */
+    margin-bottom: 30px; /* 각 섹션 간격 */
 }
 
-.abstract{
-
-
-}
-
-.index{
-
-
-}
-
-.reference{
-
-
-}
-
-.reference-pic{
-
-
-}
-
-.main-content{
-    width: 1260px;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 50px;
-
-}
-
-.main-content-title{
+/* 제목 스타일 */
+.main-content-title {
     font-weight: bold;
     font-size: 20px;
-    margin-top: 30px;
-    position: relative;
-    display: inline-block;
+    margin-right: 20px; /* 제목과 내용 사이 간격 */
+    color: #333;
+    min-width: 150px; /* 제목 최소 너비 지정 */
+    text-align: left; /* 텍스트 좌측 정렬 */
 }
 
-.main-content-text{
-    font-weight: normal;
-    font-size: 20px;
-    margin-top: 30px;
-    margin-left: 20px;
-    display: inline-block;
+/* 텍스트 스타일 */
+.main-content-text {
+    font-size: 16px;
+    line-height: 1.5; /* 가독성을 위한 줄 간격 */
+    color: #555;
+    flex: 1; /* 남은 공간을 차지하도록 설정 */
+    text-align: left; /* 모든 텍스트 좌측 정렬 */
+}
 
+/* 키워드 스타일 */
+.keyword .main-content-text {
+    font-style: italic; /* 키워드는 기울임 */
+}
+
+/* 참고문헌 링크 스타일 */
+.reference .main-content-text p {
+    margin-bottom: 10px; /* 문단 간 간격 */
+}
+
+.reference .main-content-text p a {
+    color: #007bff; /* 링크 색상 */
+    text-decoration: none;
+}
+
+.reference .main-content-text p a:hover {
+    text-decoration: underline; /* 호버 시 강조 */
+}
+
+/* 참고사진 스타일 */
+.reference-pic img {
+    max-width: 100%; /* 이미지의 최대 너비를 컨테이너에 맞춤 */
+    height: auto; /* 비율 유지 */
+    display: block; /* 블록 요소로 표시 */
+    margin: 20px 0; /* 위아래 여백 */
 }
