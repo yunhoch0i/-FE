@@ -1,0 +1,121 @@
+/* Header Styles */
+header {
+  background-color: white;
+  display: flex;
+  padding: 1rem 10%;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.search_area {
+  position: relative;
+  width: 50%;
+}
+
+.search_input {
+  width: 100%;
+  height: 40px;
+  font-size: 1rem;
+  padding: 0 1rem;
+  border: 2px solid #F29203;
+  border-radius: 4px;
+}
+
+.search_button {
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 40px;
+  width: 40px;
+  background-color: #F29203;
+  border: none;
+  cursor: pointer;
+}
+
+/* Main Section Styles */
+main {
+  padding: 2rem 10%;
+  background-color: #f9f9f9;
+}
+
+/* Profile Section */
+.profile-section {
+  margin-bottom: 2rem;
+}
+
+.profile-content {
+  display: flex;
+  align-items: center;
+}
+
+.profile-picture {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  margin-right: 2rem;
+}
+
+.profile-details p {
+  margin: 0.5rem 0;
+}
+
+/* Application Table */
+.application-table,
+.research-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 1rem;
+}
+
+.application-table th,
+.application-table td,
+.research-table th,
+.research-table td {
+  border: 1px solid #ddd;
+  padding: 0.5rem;
+  text-align: center;
+}
+
+.application-table th,
+.research-table th {
+  background-color: #f4f4f4;
+  font-weight: bold;
+}
+
+/* Research Section */
+.research-actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 1rem;
+}
+
+.add-research-btn,
+.edit-info-btn {
+  padding: 0.5rem 1rem;
+  background-color: #F29203;
+  border: none;
+  color: white;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.add-research-btn:hover,
+.edit-info-btn:hover {
+  background-color: #e68900;
+}
+
+/* Footer Styles */
+footer {
+  background-color: #f5f5f5;
+  padding: 1.5rem;
+  text-align: center;
+}
+
+.footer-text {
+  margin-bottom: 1rem;
+  font-size: 0.875rem;
+}
+
+.footer-logo-wrapper .logo {
+  width: 120px;
+}
