@@ -97,6 +97,8 @@ header {
 }
 
 .keyword{
+    display: block;
+    text-align: left;
 
 }
 
@@ -122,5 +124,30 @@ header {
 
 .reference-pic{
 
+
+}
+
+.main-content{
+    width: 1260px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+
+}
+
+.main-content-title{
+    font-weight: bold;
+    font-size: 20px;
+    margin-top: 30px;
+    position: relative;
+    display: inline-block;
+}
+
+.main-content-text{
+    font-weight: normal;
+    font-size: 20px;
+    margin-top: 30px;
+    margin-left: 20px;
+    display: inline-block;
 
 }
