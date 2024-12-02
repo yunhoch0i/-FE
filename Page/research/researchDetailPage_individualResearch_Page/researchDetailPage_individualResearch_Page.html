@@ -1,10 +1,148 @@
 <!DOCTYPE html>
 <html>
 <head>
+    <title>Research Page</title>
     <meta charset="utf-8" />
     <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="/Styles/global.css" />
+    <link rel="stylesheet" href="/Styles/styleguide.css"/>
+    <script src="script.js"></script>
 </head>
 <body>
+<div id="Page">
+    <header>
+        <a href="/Page/main/main_Page.html">
+            <img src="/resources/images/AAS-icon%20logo.svg" alt="AAS logo">
+        </a>
 
+        <div class="search_area">
+            <div class="search_input_box">
+                <form action="/Page/main/search_Page" method="post">
+                    <label for="title"></label>
+                    <input id="title" name="query" type="search" class="search_input">
+                    <button type="submit" class="search_button">
+                        <img src="/resources/images/search.svg" alt="search">
+                    </button>
+
+                </form>
+            </div>
+        </div>
+
+        <a href="/Page/user/myPage_Page/myPage_Page.html">
+            <img src="/resources/images/user.svg" alt="user">
+        </a>
+
+    </header>
+    <!-- 여기부터 메인 페이지 구현하기 -->
+    <!-- DB 연동해서 main-content-text 부분 데이터 긁어오기 -->
+    <div class="container">
+        <div class="title">
+            <div class="title-text">
+                <h1>개별연구(CSC 동형암호 활용 연구)</h1>
+            </div>
+
+            <div class="title-info">
+                <p> </p>
+            </div>
+            <div class="bookmark">
+                <button class="bookmark-button">북마크 추가</button>
+            </div>
+        </div>
+
+
+        <div class="main-content">
+            <div class="major">
+                <div class="main-content-title">
+                    <p>개설학과</p>
+                </div>
+                <div class="main-content-text">
+                    <p>AI소프트웨어융합학부</p>
+                </div>
+            </div>
+            <div class="author">
+                <div class="main-content-title">
+                    <p>교원명</p>
+                </div>
+                <div class="main-content-text">
+                    <p>김동우</p>
+                </div>
+            </div>
+
+            <div class="isNew">
+                <div class="main-content-title">
+                    <p>기존/신설</p>
+                </div>
+                <div class="main-content-text">
+                    <p>기존</p>
+                </div>
+            </div>
+            <div class="course_number">
+                <div class="main-content-title">
+                    <p>학수강좌번호</p>
+                </div>
+                <div class="main-content-text">
+                    <p>DAI3075-01</p>
+                </div>
+            </div>
+            <div class="research-content">
+                <div class="main-content-title">
+                    <p>연구내용</p>
+                </div>
+                <div class="main-content-text">
+                    <p>동형암호 개념 습득 후 간단한 응용 가능사례를 조사하고, Microsoft에서 공개한 동형암호 라이브러리 SEAL을 이용해 이를 구현</p>
+                </div>
+            </div>
+            <div class="max">
+                <div class="main-content-title">
+                    <p>수강 정원</p>
+                </div>
+                <div class="main-content-text">
+                    <p>8</p>
+                </div>
+            </div>
+            <div class="interview">
+                <div class="main-content-title">
+                    <p>인터뷰 일정</p>
+                </div>
+                <div class="main-content-text">
+                    <p>https://forms.gle/wXk8XRQVaeZNYjTLA</p>
+                </div>
+            </div>
+
+            <div class="time">
+                <div class="main-content-title">
+                    <p>주당연구시간</p>
+                </div>
+                <div class="main-content-text">
+                    <p>-</p>
+                </div>
+
+            </div>
+            <div class="qualification">
+                <div class="main-content-title">
+                    <p>수강자격</p>
+                </div>
+                <div class="main-content-text">
+                    <p>심화프로그래밍(C++), 컴퓨터알고리즘및실습 혹은 유사과목 수강자</p>
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+
+
+    <!-- 메인 페이지 끝 -->
+    <footer>
+        <img class="logo" src="/resources/images/dongguk_logo.svg" alt="Dongguk logo">
+        <p class="element">
+            <span class="text1">주소&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+            <span class="text2">04620 서울시 중구 필동로 1길 30 동국대학교 원흥관 4층 E427호</span>
+        </p>
+        <p class="footer_text">
+            <span>AI소프트웨어융합학부</span>
+        </p>
+    </footer>
+</div>
 </body>
 </html>

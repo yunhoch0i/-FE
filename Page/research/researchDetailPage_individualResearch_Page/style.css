@@ -1,0 +1,145 @@
+header {
+    background-color: white;
+    display: flex;
+    padding-left: 10%;
+    padding-right: 10%;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: 100px;
+}
+
+
+.search_area{
+    position: relative;
+    width: 736px;
+    margin-left: auto;
+    margin-right: auto;
+    border: 5px solid #F29203;
+
+}
+
+
+.search_input_box{
+    width: 670px;
+    background-color: white;
+    border: none;
+}
+
+.search_input{
+    width: 100%;
+    height: 58px;
+    border: none;
+    font-size: 2rem;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.search_button{
+    position: absolute;
+    background-color: #F29203;
+    width: 58px;
+    height: 58px;
+    top: 0;
+    right: 0;
+    cursor: pointer;
+    border: none;
+
+    outline: none;
+}
+
+.title{
+    margin-top: 100px;
+    margin-bottom: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 1260px;
+}
+
+.title-text{
+    border-bottom: 1px solid #757575;
+}
+
+.title-text h1{
+    font-size: 2.5rem;
+    font-weight: bold;
+
+}
+
+.title-text p{
+    font-size: 1.5rem;
+    font-weight: 300;
+    color: gray;
+}
+
+.title-info{
+    justify-content: left;
+    color: gray;
+    float: left;
+}
+
+.bookmark{
+    justify-content: right;
+    float: right;
+    align-items: center;
+    height: 50px;
+    line-height: 50px;
+}
+
+.bookmark-button{
+    background-color: rgb(217, 217, 217, 0.33);
+    color: black;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+
+
+/* 부모 컨테이너 정렬 */
+.main-content {
+    width: 100%; /* 화면 너비에 적응 */
+    max-width: 1260px; /* 최대 너비 제한 */
+    margin: 20px auto; /* 상하 여백과 가운데 정렬 */
+    padding: 20px; /* 내부 여백 추가 */
+    box-sizing: border-box; /* 패딩 포함 너비 계산 */
+}
+
+/* 섹션 공통 스타일 */
+.main-content > div {
+    display: flex; /* 가로 배치 */
+    align-items: flex-start; /* 위쪽 정렬 */
+    margin-bottom: 20px; /* 각 섹션 간격 */
+}
+
+/* 제목 스타일 */
+.main-content-title {
+    font-weight: bold;
+    font-size: 24px;
+    margin-right: 20px; /* 제목과 내용 사이 간격 */
+    color: #333;
+    min-width: 150px; /* 제목 최소 너비 지정 */
+    text-align: left; /* 텍스트 좌측 정렬 */
+}
+
+/* 텍스트 스타일 */
+.main-content-text {
+    font-size: 20px;
+    line-height: 1.5; /* 가독성을 위한 줄 간격 */
+    color: #555;
+    flex: 1; /* 남은 공간을 차지하도록 설정 */
+    text-align: left; /* 모든 텍스트 좌측 정렬 */
+}
+
+
+
+
+/* 참고사진 스타일 */
+.reference-pic img {
+    max-width: 100%; /* 이미지의 최대 너비를 컨테이너에 맞춤 */
+    height: auto; /* 비율 유지 */
+    display: block; /* 블록 요소로 표시 */
+    margin: 20px 0; /* 위아래 여백 */
+}
