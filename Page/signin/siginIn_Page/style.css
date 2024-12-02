@@ -1,4 +1,4 @@
-/* Global Styles */
+/* 전체적인 크기 확대 */
 body {
   font-family: Arial, sans-serif;
   background-color: #f5f5f5;
@@ -24,28 +24,28 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  margin-bottom: 2rem;
+  margin-bottom: 3rem; /* 여백 확대 */
 }
 
 .login-title {
-  font-size: 24px;
+  font-size: 32px; /* 제목 크기 확대 */
   font-weight: bold;
-  margin-bottom: 1.5rem;
+  margin-bottom: 2rem;
 }
 
-/* Input Group */
+/* 입력란 크기 확대 */
 .input-background {
   background-color: #ffe0b3;
   border-radius: 8px;
-  margin-bottom: 1rem;
-  padding: 0.5rem 1rem;
-  width: 320px; /* 가로 길이 고정 */
+  margin-bottom: 1.5rem; /* 간격 확대 */
+  padding: 1rem 1.5rem; /* 여백 확대 */
+  width: 380px; /* 입력란 너비 확대 */
   text-align: left;
 }
 
 .input-group label {
   display: block;
-  font-size: 12px;
+  font-size: 14px; /* 글자 크기 확대 */
   color: #666;
   margin-bottom: 0.5rem;
   font-weight: bold;
@@ -55,33 +55,35 @@ body {
   width: 100%;
   border: none;
   outline: none;
-  font-size: 16px;
+  font-size: 18px; /* 입력 텍스트 크기 확대 */
   background: none;
   color: #333;
-  padding: 0.2rem 0;
+  padding: 0.4rem 0; /* 입력칸 여백 확대 */
 }
 
-/* Checkbox */
+/* 체크박스 크기 조정 */
 .checkbox-group {
   display: flex;
   align-items: center;
-  margin-bottom: 1rem;
-  font-size: 14px;
+  margin-bottom: 1.5rem; /* 여백 확대 */
+  font-size: 16px; /* 글자 크기 확대 */
   font-weight: bold;
 }
 
 .checkbox-group input {
   margin-right: 0.5rem;
+  width: 20px;
+  height: 20px; /* 체크박스 크기 확대 */
 }
 
-/* Button */
+/* 버튼 크기 확대 */
 .btn {
   background-color: #ff9800;
   color: #fff;
   border: none;
-  padding: 0.5rem 1rem;
-  width: calc(320px + 2rem); /* 입력란의 padding을 고려한 크기 */
-  font-size: 16px;
+  padding: 0.8rem 1rem; /* 버튼 여백 확대 */
+  width: 428px; /* 버튼 너비 조정 */
+  font-size: 18px; /* 버튼 글자 크기 확대 */
   border-radius: 8px;
   cursor: pointer;
   font-weight: bold;
@@ -92,10 +94,10 @@ body {
   background-color: #e68900;
 }
 
-/* Links */
+/* 링크 크기 확대 */
 .links {
-  margin-top: 1.5rem;
-  font-size: 14px;
+  margin-top: 2rem; /* 간격 확대 */
+  font-size: 16px; /* 글자 크기 확대 */
   color: #000;
 }
 
@@ -103,7 +105,7 @@ body {
   color: #000;
   text-decoration: none;
   font-weight: bold;
-  margin: 0 0.3rem;
+  margin: 0 0.5rem;
 }
 
 .links a:hover {

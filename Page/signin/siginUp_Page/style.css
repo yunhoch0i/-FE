@@ -116,13 +116,37 @@ body {
   cursor: pointer;
   font-weight: bold;
   box-sizing: border-box;
-  margin-top: 3rem;
+  margin-top: 2rem;
 }
 
 .btn:hover {
   background-color: #e68900;
 }
 
+/* Footer */
+footer {
+  width: 100%;
+  padding: 1rem 2rem;
+  background-color: #f0f0f0;
+  text-align: center;
+  box-sizing: border-box;
+}
 
+footer .footer-text {
+  font-size: 12px;
+  line-height: 1.5;
+  color: #333;
+  margin-bottom: 1rem;
+}
 
+footer .footer-logo-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 1rem;
+}
 
+footer .logo {
+  max-width: 100px;
+  height: auto;
+}

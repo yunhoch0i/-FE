@@ -1,9 +1,7 @@
 // 인증번호 입력란을 보이게 설정
 function showVerificationSection() {
   const verificationSection = document.getElementById("verification-section");
-  if (verificationSection.classList.contains("hidden")) {
-      verificationSection.classList.remove("hidden");
-  }
+  verificationSection.classList.remove("hidden"); // 숨김 클래스를 제거하여 표시
 }
 
 // 인증번호 확인 버튼 동작
